@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="KfLibrary.Domain/KfSoft.Domain.csproj" Id="2a288a5c-d79d-4318-9d46-a9c509fa2f0e" />
+  <Project Path="KfSoft.Console/KfSoft.Console.csproj" />
+  <Project Path="KfSoft.EFCore/KfSoft.EFCore.csproj" Id="6728486b-bc1c-4daf-aadb-9687ef63c912" />
+</Solution>
