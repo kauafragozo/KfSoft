@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projetos\\KfSoft\\KfSoft.Console\\",
+  "WorkspaceRootPath": "D:\\Projetos\\KfSoft\\KfSoft\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE4308D7-9499-CFB5-A1CF-41320459B231}|KfSoft.Console\\KfSoft.Console.csproj|d:\\projetos\\kfsoft\\kfsoft.console\\kfsoft.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE4308D7-9499-CFB5-A1CF-41320459B231}|KfSoft.Console\\KfSoft.Console.csproj|d:\\projetos\\kfsoft\\kfsoft\\kfsoft.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE4308D7-9499-CFB5-A1CF-41320459B231}|KfSoft.Console\\KfSoft.Console.csproj|solutionrelative:kfsoft.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6728486B-BC1C-4DAF-AADB-9687EF63C912}|KfSoft.EFCore\\KfSoft.EFCore.csproj|d:\\projetos\\kfsoft\\kfsoft.console\\kfsoft.efcore\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6728486B-BC1C-4DAF-AADB-9687EF63C912}|KfSoft.EFCore\\KfSoft.EFCore.csproj|d:\\projetos\\kfsoft\\kfsoft\\kfsoft.efcore\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6728486B-BC1C-4DAF-AADB-9687EF63C912}|KfSoft.EFCore\\KfSoft.EFCore.csproj|solutionrelative:kfsoft.efcore\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A288A5C-D79D-4318-9D46-A9C509FA2F0E}|KfLibrary.Domain\\KfSoft.Domain.csproj|d:\\projetos\\kfsoft\\kfsoft.console\\kflibrary.domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A288A5C-D79D-4318-9D46-A9C509FA2F0E}|KfLibrary.Domain\\KfSoft.Domain.csproj|d:\\projetos\\kfsoft\\kfsoft\\kflibrary.domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A288A5C-D79D-4318-9D46-A9C509FA2F0E}|KfLibrary.Domain\\KfSoft.Domain.csproj|solutionrelative:kflibrary.domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A288A5C-D79D-4318-9D46-A9C509FA2F0E}|KfLibrary.Domain\\KfSoft.Domain.csproj|d:\\projetos\\kfsoft\\kfsoft.console\\kflibrary.domain\\entities\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A288A5C-D79D-4318-9D46-A9C509FA2F0E}|KfLibrary.Domain\\KfSoft.Domain.csproj|solutionrelative:kflibrary.domain\\entities\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6728486B-BC1C-4DAF-AADB-9687EF63C912}|KfSoft.EFCore\\KfSoft.EFCore.csproj|d:\\projetos\\kfsoft\\kfsoft.console\\kfsoft.efcore\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6728486B-BC1C-4DAF-AADB-9687EF63C912}|KfSoft.EFCore\\KfSoft.EFCore.csproj|solutionrelative:kfsoft.efcore\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,43 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Projeto.cs",
-              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\Entities\\Projeto.cs",
-              "RelativeDocumentMoniker": "KfLibrary.Domain\\Entities\\Projeto.cs",
-              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\Entities\\Projeto.cs",
-              "RelativeToolTip": "KfLibrary.Domain\\Entities\\Projeto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T23:55:16.814Z",
-              "IsPinned": true
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Departamento.cs",
-              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\Entities\\Departamento.cs",
+              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft\\KfLibrary.Domain\\Entities\\Departamento.cs",
               "RelativeDocumentMoniker": "KfLibrary.Domain\\Entities\\Departamento.cs",
-              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\Entities\\Departamento.cs",
+              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft\\KfLibrary.Domain\\Entities\\Departamento.cs",
               "RelativeToolTip": "KfLibrary.Domain\\Entities\\Departamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T22:31:17.631Z",
+              "WhenOpened": "2026-08-03T23:48:20.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\Context\\AppDbContext.cs",
+              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.EFCore\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "KfSoft.EFCore\\Context\\AppDbContext.cs",
-              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\Context\\AppDbContext.cs",
+              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.EFCore\\Context\\AppDbContext.cs",
               "RelativeToolTip": "KfSoft.EFCore\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAzwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFgAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-17T10:09:57.038Z",
               "EditorCaption": ""
@@ -75,26 +54,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.Console\\Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.Console\\Program.cs",
               "RelativeDocumentMoniker": "KfSoft.Console\\Program.cs",
-              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.Console\\Program.cs",
+              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.Console\\Program.cs",
               "RelativeToolTip": "KfSoft.Console\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-17T09:34:50.147Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\AppSettings.cs",
-              "RelativeDocumentMoniker": "KfSoft.EFCore\\AppSettings.cs",
-              "ToolTip": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\AppSettings.cs",
-              "RelativeToolTip": "KfSoft.EFCore\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T10:18:12.622Z"
             }
           ]
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQnYmZLsUEs=",
+  "dgSpecHash": "0EXfawrgTzQ=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.Console\\KfSoft.Console.csproj",
+  "projectFilePath": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.Console\\KfSoft.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kauaf\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\kauaf\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

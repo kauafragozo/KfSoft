@@ -4734,11 +4734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\KfSoft.EFCore.csproj",
+      "projectUniqueName": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.EFCore\\KfSoft.EFCore.csproj",
       "projectName": "KfSoft.EFCore",
-      "projectPath": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\KfSoft.EFCore.csproj",
+      "projectPath": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.EFCore\\KfSoft.EFCore.csproj",
       "packagesPath": "C:\\Users\\kauaf\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfSoft.EFCore\\obj\\",
+      "outputPath": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4760,8 +4760,8 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\KfSoft.Domain.csproj": {
-              "projectPath": "D:\\Projetos\\KfSoft\\KfSoft.Console\\KfLibrary.Domain\\KfSoft.Domain.csproj"
+            "D:\\Projetos\\KfSoft\\KfSoft\\KfLibrary.Domain\\KfSoft.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\KfSoft\\KfSoft\\KfLibrary.Domain\\KfSoft.Domain.csproj"
             }
           }
         }

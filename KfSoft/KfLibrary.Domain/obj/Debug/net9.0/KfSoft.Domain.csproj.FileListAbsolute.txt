@@ -9,3 +9,15 @@ D:\Projetos\KfSoft\KfSoft.Console\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domai
 D:\Projetos\KfSoft\KfSoft.Console\KfLibrary.Domain\obj\Debug\net9.0\refint\KfSoft.Domain.dll
 D:\Projetos\KfSoft\KfSoft.Console\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.pdb
 D:\Projetos\KfSoft\KfSoft.Console\KfLibrary.Domain\obj\Debug\net9.0\ref\KfSoft.Domain.dll
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\bin\Debug\net9.0\KfSoft.Domain.deps.json
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\bin\Debug\net9.0\KfSoft.Domain.dll
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\bin\Debug\net9.0\KfSoft.Domain.pdb
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.AssemblyInfoInputs.cache
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.AssemblyInfo.cs
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.sourcelink.json
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.dll
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\refint\KfSoft.Domain.dll
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\KfSoft.Domain.pdb
+D:\Projetos\KfSoft\KfSoft\KfLibrary.Domain\obj\Debug\net9.0\ref\KfSoft.Domain.dll
