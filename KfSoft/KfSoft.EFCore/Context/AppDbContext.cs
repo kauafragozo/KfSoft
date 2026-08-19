@@ -86,7 +86,7 @@ namespace KfSoft.EFCore.Context
                 .HasDefaultValueSql("GETDATE()");
 
                 entity.HasData(
-                    new Funcionario { Codigo = 1, Nome = "Kauã Fragozo", Cargo = "Desenvolvedor"}
+                    new Funcionario { Codigo = 1, Nome = "Kauã Fragozo", Cargo = "Desenvolvedor", DepartamentoCodigo = 1 }
 
                     );
             });

@@ -13,5 +13,8 @@ namespace KfSoft.Domain.Entities
         public string Cargo { get; set; } = string.Empty;
         public decimal Salario { get; set; }
         public DateOnly DataAdimissao { get; set; }
+        
+        public int DepartamentoCodigo { get; set; }
+        public Departamento? Departamento { get; set; }
     }
 }
