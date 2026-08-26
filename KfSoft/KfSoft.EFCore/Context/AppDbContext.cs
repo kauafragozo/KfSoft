@@ -88,10 +88,10 @@ namespace KfSoft.EFCore.Context
                 entity.Property(e => e.Salario)
                 .HasColumnType("decimal(10,2)");
 
-                entity.HasData(
-                    new Funcionario { Codigo = 1, Nome = "Kauã Fragozo", Cargo = "Desenvolvedor", DepartamentoCodigo = 1 }
+                //entity.HasData(
+                //    new Funcionario { Codigo = 1, Nome = "Kauã Fragozo", Cargo = "Desenvolvedor", DepartamentoCodigo = 1 }
 
-                    );
+                //    );
             });
 
         }
