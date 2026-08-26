@@ -20,7 +20,8 @@ using (AppDbContext context = new AppDbContext())
 
     AdicionarFuncionarioAdd(context);
     AdicionarFuncionarioAddRange(context);
-    AdicionarFuncionarioRelacional(context);
+    AdicionarFuncionarioAddRelacional(context);
+    AdicionarFuncionarioAddRangeRelacional(context);
 
 
 }
@@ -62,12 +63,12 @@ void AdicionarFuncionarioAddRange(AppDbContext context)
 }
 
 
-void AdicionarFuncionarioRelacional(AppDbContext context)
+void AdicionarFuncionarioAddRelacional(AppDbContext context)
 {
     var departamento = new Departamento
     {
         Nome = "Departamento de Marketing",
-        Descricao = "Departamento de Marketing e Vendas"
+        Descricao = "Departamento de Marketing "
     };
     departamento.Funcionarios.Add(new Funcionario
     {
@@ -81,6 +82,39 @@ void AdicionarFuncionarioRelacional(AppDbContext context)
     context.SaveChanges();
 
 }
+
+void AdicionarFuncionarioAddRangeRelacional(AppDbContext context)
+{
+    var departamento = new Departamento
+    {
+        Nome = "Departamento de Vendas",
+        Descricao = "Departamento de Vendas"
+    };
+    departamento.Funcionarios = new List<Funcionario>
+    {
+        new Funcionario
+        {
+            Nome = "Ana Paula",
+            Cargo = "Vendedora",
+            Salario = 2500.00m,
+        },
+        new Funcionario
+        {
+            Nome = "Pedro Henrique",
+            Cargo = "Vendedor",
+            Salario = 2800.00m,
+        }
+    };
+    context.Departamentos.AddRange(departamento);
+    context.SaveChanges();
+}
+
+
+
+
+
+
+
 
 
 

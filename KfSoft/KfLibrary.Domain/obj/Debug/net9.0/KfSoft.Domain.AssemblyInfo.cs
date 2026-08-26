@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KfSoft.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57293ef18b1e546cee579d6297fd0616a55369ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fad198975fa347502788cae2403228b2d91e4937")]
 [assembly: System.Reflection.AssemblyProductAttribute("KfSoft.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KfSoft.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
