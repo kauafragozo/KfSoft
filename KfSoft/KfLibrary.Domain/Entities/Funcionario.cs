@@ -16,5 +16,6 @@ namespace KfSoft.Domain.Entities
         
         public int DepartamentoCodigo { get; set; }
         public Departamento? Departamento { get; set; }
+        public FuncionarioDetalhe? FuncionarioDetalhe { get; set; }
     }
 }

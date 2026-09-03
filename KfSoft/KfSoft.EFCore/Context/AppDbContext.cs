@@ -7,11 +7,13 @@ using KfSoft.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 namespace KfSoft.EFCore.Context
 {
-    public  class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<Projeto> Projetos { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
+
+        public DbSet<FuncionarioDetalhe> FuncionarioDetalhes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,8 +38,8 @@ namespace KfSoft.EFCore.Context
                 .HasDefaultValueSql("GETDATE()");
 
                 entity.HasData(
-                    new Departamento {Codigo = 1, Nome = "Departamento de TI", Descricao = "Departamento de Tecnologia da Informação" },
-                    new Departamento {Codigo = 2, Nome = "Departamento de RH", Descricao = "Departamento de Recursos Humanos" }
+                    new Departamento { Codigo = 1, Nome = "Departamento de TI", Descricao = "Departamento de Tecnologia da Informação" },
+                    new Departamento { Codigo = 2, Nome = "Departamento de RH", Descricao = "Departamento de Recursos Humanos" }
                     );
 
             });
@@ -65,7 +67,7 @@ namespace KfSoft.EFCore.Context
 
                 entity.HasData(
                     new Projeto { Codigo = 1, Descricao = "Desenvolvimento de Sistema de Gestão", Responsavel = "Kauã Fragozo", Status = false },
-                    new Projeto{Codigo = 2, Descricao="Melhorias no Banco de Dados da Empresa'", Responsavel = "Kauã Fragozo", Status = true}
+                    new Projeto { Codigo = 2, Descricao = "Melhorias no Banco de Dados da Empresa'", Responsavel = "Kauã Fragozo", Status = true }
                    );
             });
 
@@ -92,6 +94,35 @@ namespace KfSoft.EFCore.Context
                 //    new Funcionario { Codigo = 1, Nome = "Kauã Fragozo", Cargo = "Desenvolvedor", DepartamentoCodigo = 1 }
 
                 //    );
+            });
+
+            modelBuilder.Entity<FuncionarioDetalhe>(entity =>
+            {
+                entity.HasKey(e => e.Codigo);
+                entity.Property(e => e.EnderecoResidencial)
+                .IsRequired()
+                .HasMaxLength(100);
+                entity.Property(e => e.DataNascimento)
+                .IsRequired();
+                entity.Property(e => e.Celular)
+                .IsRequired()
+                .HasMaxLength(20);
+                entity.Property(e => e.Genero)
+                .IsRequired()
+                .HasMaxLength(10);
+                entity.Property(e => e.EstadoCivil)
+                .IsRequired()
+                .HasMaxLength(20);
+                entity.Property(e => e.CPF)
+                .IsRequired()
+                .HasMaxLength(14);
+                entity.Property(e => e.Nacionalidade)
+                .IsRequired()
+                .HasMaxLength(20);
+                entity.Property(e => e.Escolaridade)
+                .IsRequired()
+                .HasMaxLength(20);
+
             });
 
         }
