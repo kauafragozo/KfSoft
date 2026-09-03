@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KfSoft.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6aa680b3731e459641655afced4ced0057cc31a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed52cf5a773e6bc360fd2c228a1f945ede67d92e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KfSoft.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KfSoft.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

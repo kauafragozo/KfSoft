@@ -17,5 +17,7 @@ namespace KfSoft.Domain.Entities
         public DateTime? DataFim { get; set; }
         public bool Status { get; set; }
 
+       public ICollection<Funcionario> Funcionarios { get; set; } = new List<Funcionario>();
+
     }
 }
