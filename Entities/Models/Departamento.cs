@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace KfSoft.Domain.Entities
+namespace KfSoft.Entities
 {
     public class Departamento
     {

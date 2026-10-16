@@ -1,22 +1,34 @@
-﻿using KfSoft.EFCore.Context;
-using KfSoft.Domain.Entities;
+﻿using KfSoft.Context;
+using KfSoft.Entities;
 
-
-using (AppDbContext context = new AppDbContext())
+namespace CatalogoFilmes
 {
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
 
-    context.Database.EnsureDeleted();
-    Console.WriteLine("Criando Banco de dados");
-    context.Database.EnsureCreated();
+            using (AppDbContext context = new AppDbContext())
+            {
 
-    Console.WriteLine("Departamentos Criados");
-    Console.WriteLine("Projetos Criados");
-    Console.WriteLine("Funcionarios Criados");
-    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                context.Database.EnsureDeleted();
+                Console.WriteLine("Criando Banco de dados");
+                context.Database.EnsureCreated();
 
-    Console.ReadKey();
-    Console.Clear();
+                Console.WriteLine("Departamentos Criados");
+                Console.WriteLine("Projetos Criados");
+                Console.WriteLine("Funcionarios Criados");
+                Console.WriteLine("Pressione qualquer tecla para continuar...");
 
+                Console.ReadKey();
+                Console.Clear();
+
+            }
+
+        }
+    }
 }
+
+
 
 

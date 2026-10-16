@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KfSoft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+657c79674fd6323a1a272801d061a46b82f97ccb")]
 [assembly: System.Reflection.AssemblyProductAttribute("KfSoft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KfSoft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

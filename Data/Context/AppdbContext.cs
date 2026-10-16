@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using KfSoft.Domain.Entities;
+using KfSoft.Entities;
 using Microsoft.EntityFrameworkCore;
-namespace KfSoft.EFCore.Context
+namespace KfSoft.Context
 {
     public class AppDbContext : DbContext
     {
@@ -98,7 +98,7 @@ namespace KfSoft.EFCore.Context
                 .HasMaxLength(40);
 
                 entity.HasData(
-                    new FuncionarioDetalhe {Codigo = 1, EnderecoResidencial = "Rua da Paz", DataNascimento = new DateOnly (2003, 11, 24), Celular = "40002-8922", Genero = "Masculino", EstadoCivil = "Solteiro", CPF = "000.000.000-00", Nacionalidade = "Brasileiro", Escolaridade = "Superior em Andamento", FuncionarioCodigo = 1 }
+                    new FuncionarioDetalhe {Codigo = 1, EnderecoResidencial = "Rua da Paz", DataNascimento = new DateOnly (2003, 11, 24), Celular = "40002-8922", Genero = Genero.Masculino, EstadoCivil = EstadoCivil.Solteiro, CPF = "000.000.000-00", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Tecnico, FuncionarioCodigo = 1 }
                 );
 
             });

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KfSoft.Domain.Entities
+namespace KfSoft.Entities
 {
     public  class Funcionario
     {

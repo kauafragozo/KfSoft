@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vk0SdX0zsoQ=",
+  "dgSpecHash": "f0ZT0Z+QgvY=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\KfSoft\\KfSoft\\KfSoft.csproj",
+  "projectFilePath": "D:\\Projetos\\KfSoft\\KfSoft.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kauaf\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\kauaf\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
@@ -60,8 +60,33 @@
     "C:\\Users\\kauaf\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.11\\system.diagnostics.eventlog.9.0.11.nupkg.sha512",
     "C:\\Users\\kauaf\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.1\\system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
     "C:\\Users\\kauaf\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
-    "C:\\Users\\kauaf\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.11\\system.security.cryptography.pkcs.9.0.11.nupkg.sha512",
+    "C:\\Users\\kauaf\\.nuget\\packages\\system.security.cryptography.pkcs\\10.0.11\\system.security.cryptography.pkcs.10.0.11.nupkg.sha512",
     "C:\\Users\\kauaf\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'System.Security.Cryptography.Pkcs' 10.0.11 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-2fmv-rv2c-59x7",
+      "projectPath": "D:\\Projetos\\KfSoft\\KfSoft.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Projetos\\KfSoft\\KfSoft.csproj",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "O pacote 'System.Security.Cryptography.Pkcs' 10.0.11 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-846f-f764-76mx",
+      "projectPath": "D:\\Projetos\\KfSoft\\KfSoft.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Projetos\\KfSoft\\KfSoft.csproj",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
