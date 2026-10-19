@@ -12,7 +12,7 @@ namespace KfSoft.Entities
         public string Nome { get; set; } = string.Empty;
         public string Cargo { get; set; } = string.Empty;
         public decimal Salario { get; set; }
-        public DateOnly DataAdimissao { get; set; }
+        public DateOnly DataContratacao { get; set; }
         
         public int DepartamentoCodigo { get; set; }
         public Departamento? Departamento { get; set; }

@@ -11,7 +11,7 @@ namespace KfSoft.Entities
 
         public int Codigo { get; set; }
         public string EnderecoResidencial { get; set; } = string.Empty;
-        public DateOnly DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
         public string Celular { get; set; } = string.Empty;
         public Genero? Genero { get; set; }
         public string? Foto { get; set; }
