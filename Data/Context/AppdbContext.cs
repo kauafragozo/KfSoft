@@ -84,6 +84,9 @@ namespace KfSoft.Context
                 entity.Property(e => e.Genero)
                 .IsRequired()
                 .HasMaxLength(10);
+                entity.Property(e => e. Foto)
+                .IsRequired()
+                .HasMaxLength(200);
                 entity.Property(e => e.EstadoCivil)
                 .IsRequired()
                 .HasMaxLength(20);
