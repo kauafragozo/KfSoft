@@ -13,6 +13,7 @@ namespace KfSoft.Context
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<FuncionarioDetalhe> FuncionarioDetalhes { get; set; }
         public DbSet<Projeto> Projetos { get; set;}
+        public DbSet<ProjetoFuncionario> ProjetoFuncionario { get ;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -207,10 +208,12 @@ namespace KfSoft.Context
 
      });
 
-            }
-
-
+        modelBuilder.Entity<ProjetoFuncionario>()
+        .HasKey(fp => new { fp.FuncionarioCodigo, fp.ProjetoCodigo });
         }
+
+
+    }
 
 
     }
