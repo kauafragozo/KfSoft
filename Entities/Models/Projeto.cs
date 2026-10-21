@@ -9,8 +9,8 @@ namespace KfSoft.Entities
         public string Descricao { get; set;} = string.Empty;
         public decimal Orcamento { get; set;}
         public DateTime DataInicio { get; set;}
-        public DateTime DataAtualizacao { get; set;}
-        public DateTime DataConclusao { get; set;}
+        public DateTime? DataAtualizacao { get; set;}
+        public DateTime? DataConclusao { get; set;}
         public StatusProjeto? Status { get; set;}
     }
 }

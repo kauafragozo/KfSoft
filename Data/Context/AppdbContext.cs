@@ -12,6 +12,7 @@ namespace KfSoft.Context
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<FuncionarioDetalhe> FuncionarioDetalhes { get; set; }
+        public DbSet<Projeto> Projetos { get; set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -178,6 +179,32 @@ namespace KfSoft.Context
      new FuncionarioDetalhe { Codigo = 30, FuncionarioCodigo = 30, EnderecoResidencial = "Rua AD, 291", DataNascimento = new DateTime(1998, 7, 19), Celular = "988778888", Genero = Genero.Feminino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Casado, CPF = "99990000002", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio },
      new FuncionarioDetalhe { Codigo = 31, FuncionarioCodigo = 31, EnderecoResidencial = "Rua AJ, 291", DataNascimento = new DateTime(1998, 11, 9), Celular = "988778866", Genero = Genero.Feminino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Solteiro, CPF = "99990000001", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio },
      new FuncionarioDetalhe { Codigo = 32, FuncionarioCodigo = 32, EnderecoResidencial = "Rua AD, 301", DataNascimento = new DateTime(1988, 8, 20), Celular = "977777777", Genero = Genero.Masculino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Solteiro, CPF = "00001111111", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio });
+     });
+
+     modelBuilder.Entity<Projeto>(entity =>
+     {
+         entity.HasKey(e => e.Codigo);
+         entity.Property(e => e.Nome)
+         .IsRequired()
+         .HasMaxLength(50);
+         entity.Property(e => e.Descricao)
+         .HasMaxLength(100);
+         entity.Property(e => e.DataInicio)
+         .IsRequired()
+         .ValueGeneratedOnAdd()
+         .HasDefaultValueSql("GETDATE ()");
+         entity.Property(e => e.DataAtualizacao)
+         .ValueGeneratedOnUpdate();
+         entity.Property(e => e.Status)
+         .IsRequired()
+         .HasDefaultValue(StatusProjeto.EmAprovacao);
+
+         entity.HasData (
+            new Projeto {Codigo = 1, Nome = "KfSoft", Descricao = "Desenvolvimento de Sistema de Gestao de Projetos", Orcamento = 100.00m, Status = StatusProjeto.Iniciado},
+            new Projeto {Codigo = 2, Nome = "ImcManager", Descricao = "Calculadora de IMC, Cadastro de Pacientes e Relatorios", Orcamento = 150.00m, Status= StatusProjeto.Concluido},
+            new Projeto {Codigo = 3,Nome = "Catalogo de Filmes", Descricao = "Banco de Dados para Sistema de Filmes", Orcamento = 200.00m, Status= StatusProjeto.Concluido}
+            );
+
      });
 
             }
