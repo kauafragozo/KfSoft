@@ -8,5 +8,8 @@ namespace KfSoft.Entities
         public string Nome { get; set;} = string.Empty;
         public string Email { get; set;} = string.Empty;
         public string Telefone { get; set;} = string.Empty;
+
+        public ICollection <Projeto> Projetos { get ;set;} = 
+        new List<Projeto>();
     }
 }

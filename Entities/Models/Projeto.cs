@@ -12,5 +12,7 @@ namespace KfSoft.Entities
         public DateTime? DataAtualizacao { get; set;}
         public DateTime? DataConclusao { get; set;}
         public StatusProjeto? Status { get; set;}
+        public int ClienteCodigo { get; set;} 
+        public Cliente? Cliente { get; set;}
     }
 }

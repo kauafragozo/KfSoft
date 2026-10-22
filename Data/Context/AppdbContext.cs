@@ -204,9 +204,9 @@ namespace KfSoft.Context
                 .HasDefaultValue(StatusProjeto.EmAprovacao);
 
                 entity.HasData(
-                   new Projeto { Codigo = 1, Nome = "KfSoft", Descricao = "Desenvolvimento de Sistema de Gestao de Projetos", Orcamento = 100.00m, Status = StatusProjeto.Iniciado },
-                   new Projeto { Codigo = 2, Nome = "ImcManager", Descricao = "Calculadora de IMC, Cadastro de Pacientes e Relatorios", Orcamento = 150.00m, Status = StatusProjeto.Concluido },
-                   new Projeto { Codigo = 3, Nome = "Catalogo de Filmes", Descricao = "Banco de Dados para Sistema de Filmes", Orcamento = 200.00m, Status = StatusProjeto.Concluido }
+                   new Projeto { Codigo = 1, Nome = "KfSoft", Descricao = "Desenvolvimento de Sistema de Gestao de Projetos", Orcamento = 100.00m, Status = StatusProjeto.Iniciado, ClienteCodigo = 5 },
+                   new Projeto { Codigo = 2, Nome = "ImcManager", Descricao = "Calculadora de IMC, Cadastro de Pacientes e Relatorios", Orcamento = 150.00m, Status = StatusProjeto.Concluido, ClienteCodigo = 3},
+                   new Projeto { Codigo = 3, Nome = "Catalogo de Filmes", Descricao = "Banco de Dados para Sistema de Filmes", Orcamento = 200.00m, Status = StatusProjeto.Concluido, ClienteCodigo = 5}
                    );
 
             });
@@ -230,7 +230,7 @@ namespace KfSoft.Context
                 entity.HasData(
                     new Cliente { Codigo = 1, Nome = "Grupo Plast SA", Email = "plastsa@plastsa.com.br", Telefone = "54 998876655" },
                     new Cliente { Codigo = 2, Nome = "Cauã e César Mudanças Ltda", Email = "qualidade@cauaecesarmudancasltda.com.br", Telefone = "(12) 2872-7157" },
-                    new Cliente { Codigo = 3, Nome = "Bento e Francisco Limpeza ME", Email = "cobranca@bentoefranciscolimpezame.com.br", Telefone = "(13) 3756-5745" },
+                    new Cliente { Codigo = 3, Nome = "Bento e Francisco Medicina Geral", Email = "cobranca@bentoefranciscomedicina.com.br", Telefone = "(13) 3756-5745" },
                     new Cliente { Codigo = 4, Nome = "Luciana e Stefany Advocacia ME", Email = "vendas@lucianaestefanyadvocaciame.com.br", Telefone = "(11) 2983-9664" },
                     new Cliente { Codigo = 5, Nome = "Kevin e Agatha Marketing ME", Email = "estoque@kevineagathamarketingme.com.br", Telefone = "(11) 2825-2291"}
                 );
