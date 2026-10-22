@@ -12,8 +12,9 @@ namespace KfSoft.Context
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<FuncionarioDetalhe> FuncionarioDetalhes { get; set; }
-        public DbSet<Projeto> Projetos { get; set;}
-        public DbSet<ProjetoFuncionario> ProjetoFuncionario { get ;set;}
+        public DbSet<Projeto> Projetos { get; set; }
+        public DbSet<ProjetoFuncionario> ProjetoFuncionario { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -70,7 +71,7 @@ namespace KfSoft.Context
                 entity.Property(e => e.Salario)
                 .HasColumnType("decimal(10,2)");
 
-                entity.HasData(    
+                entity.HasData(
                     //Finanças
                     new Funcionario { Codigo = 1, Nome = "João Silva", Cargo = "Gerente de Finanças", Salario = 5250.00m, DataContratacao = new DateOnly(2023, 1, 15), DepartamentoCodigo = 1 },
                new Funcionario { Codigo = 2, Nome = "Carlos Pereira", Cargo = "Analista Financeiro", Salario = 4500.00m, DataContratacao = new DateOnly(2021, 11, 10), DepartamentoCodigo = 1 },
@@ -127,7 +128,7 @@ namespace KfSoft.Context
                 entity.Property(e => e.Genero)
                 .IsRequired()
                 .HasMaxLength(10);
-                entity.Property(e => e. Foto)
+                entity.Property(e => e.Foto)
                 .IsRequired()
                 .HasMaxLength(200);
                 entity.Property(e => e.EstadoCivil)
@@ -180,41 +181,60 @@ namespace KfSoft.Context
      new FuncionarioDetalhe { Codigo = 30, FuncionarioCodigo = 30, EnderecoResidencial = "Rua AD, 291", DataNascimento = new DateTime(1998, 7, 19), Celular = "988778888", Genero = Genero.Feminino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Casado, CPF = "99990000002", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio },
      new FuncionarioDetalhe { Codigo = 31, FuncionarioCodigo = 31, EnderecoResidencial = "Rua AJ, 291", DataNascimento = new DateTime(1998, 11, 9), Celular = "988778866", Genero = Genero.Feminino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Solteiro, CPF = "99990000001", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio },
      new FuncionarioDetalhe { Codigo = 32, FuncionarioCodigo = 32, EnderecoResidencial = "Rua AD, 301", DataNascimento = new DateTime(1988, 8, 20), Celular = "977777777", Genero = Genero.Masculino, Foto = "foto30.jpg", EstadoCivil = EstadoCivil.Solteiro, CPF = "00001111111", Nacionalidade = "Brasileiro", Escolaridade = Escolaridade.Medio });
-     });
+            });
 
-     modelBuilder.Entity<Projeto>(entity =>
-     {
-         entity.HasKey(e => e.Codigo);
-         entity.Property(e => e.Nome)
-         .IsRequired()
-         .HasMaxLength(50);
-         entity.Property(e => e.Descricao)
-         .HasMaxLength(100);
-         entity.Property(e => e.DataInicio)
-         .IsRequired()
-         .ValueGeneratedOnAdd()
-         .HasDefaultValueSql("GETDATE ()");
-         entity.Property(e => e.DataAtualizacao)
-         .ValueGeneratedOnUpdate();
-         entity.Property(e => e.Status)
-         .IsRequired()
-         .HasDefaultValue(StatusProjeto.EmAprovacao);
+            modelBuilder.Entity<Projeto>(entity =>
+            {
+                entity.HasKey(e => e.Codigo);
+                entity.Property(e => e.Nome)
+                .IsRequired()
+                .HasMaxLength(50);
+                entity.Property(e => e.Descricao)
+                .HasMaxLength(100);
+                entity.Property(e => e.Orcamento)
+                .HasPrecision(10, 2);
+                entity.Property(e => e.DataInicio)
+                .IsRequired()
+                .ValueGeneratedOnAdd()
+                .HasDefaultValueSql("GETDATE ()");
+                entity.Property(e => e.DataAtualizacao)
+                .ValueGeneratedOnUpdate();
+                entity.Property(e => e.Status)
+                .IsRequired()
+                .HasDefaultValue(StatusProjeto.EmAprovacao);
 
-         entity.HasData (
-            new Projeto {Codigo = 1, Nome = "KfSoft", Descricao = "Desenvolvimento de Sistema de Gestao de Projetos", Orcamento = 100.00m, Status = StatusProjeto.Iniciado},
-            new Projeto {Codigo = 2, Nome = "ImcManager", Descricao = "Calculadora de IMC, Cadastro de Pacientes e Relatorios", Orcamento = 150.00m, Status= StatusProjeto.Concluido},
-            new Projeto {Codigo = 3,Nome = "Catalogo de Filmes", Descricao = "Banco de Dados para Sistema de Filmes", Orcamento = 200.00m, Status= StatusProjeto.Concluido}
-            );
+                entity.HasData(
+                   new Projeto { Codigo = 1, Nome = "KfSoft", Descricao = "Desenvolvimento de Sistema de Gestao de Projetos", Orcamento = 100.00m, Status = StatusProjeto.Iniciado },
+                   new Projeto { Codigo = 2, Nome = "ImcManager", Descricao = "Calculadora de IMC, Cadastro de Pacientes e Relatorios", Orcamento = 150.00m, Status = StatusProjeto.Concluido },
+                   new Projeto { Codigo = 3, Nome = "Catalogo de Filmes", Descricao = "Banco de Dados para Sistema de Filmes", Orcamento = 200.00m, Status = StatusProjeto.Concluido }
+                   );
 
-     });
+            });
 
-        modelBuilder.Entity<ProjetoFuncionario>()
-        .HasKey(fp => new { fp.FuncionarioCodigo, fp.ProjetoCodigo });
-        }
+            modelBuilder.Entity<ProjetoFuncionario>()
+            .HasKey(fp => new { fp.FuncionarioCodigo, fp.ProjetoCodigo });
 
+            modelBuilder.Entity<Cliente>(entity =>
+            {
+                entity.HasKey(e => e.Codigo);
+                entity.Property(e => e.Nome)
+                .IsRequired()
+                .HasMaxLength(50);
+                entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(75);
+                entity.Property(e => e.Telefone)
+                .IsRequired()
+                .HasMaxLength(20);
 
+                entity.HasData(
+                    new Cliente { Codigo = 1, Nome = "Grupo Plast SA", Email = "plastsa@plastsa.com.br", Telefone = "54 998876655" },
+                    new Cliente { Codigo = 2, Nome = "Cauã e César Mudanças Ltda", Email = "qualidade@cauaecesarmudancasltda.com.br", Telefone = "(12) 2872-7157" },
+                    new Cliente { Codigo = 3, Nome = "Bento e Francisco Limpeza ME", Email = "cobranca@bentoefranciscolimpezame.com.br", Telefone = "(13) 3756-5745" },
+                    new Cliente { Codigo = 4, Nome = "Luciana e Stefany Advocacia ME", Email = "vendas@lucianaestefanyadvocaciame.com.br", Telefone = "(11) 2983-9664" },
+                    new Cliente { Codigo = 5, Nome = "Kevin e Agatha Marketing ME", Email = "estoque@kevineagathamarketingme.com.br", Telefone = "(11) 2825-2291"}
+                );
+            });
     }
-
-
-    }
+    }}
 
