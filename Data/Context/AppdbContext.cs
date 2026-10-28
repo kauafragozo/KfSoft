@@ -128,9 +128,6 @@ namespace KfSoft.Context
                 entity.Property(e => e.Genero)
                 .IsRequired()
                 .HasMaxLength(10);
-                entity.Property(e => e.Foto)
-                .IsRequired()
-                .HasMaxLength(200);
                 entity.Property(e => e.EstadoCivil)
                 .IsRequired()
                 .HasMaxLength(20);
@@ -229,7 +226,7 @@ namespace KfSoft.Context
 
                 entity.HasData(
                     new Cliente { Codigo = 1, Nome = "Grupo Plast SA", Email = "plastsa@plastsa.com.br", Telefone = "54 998876655" },
-                    new Cliente { Codigo = 2, Nome = "Cauã e César Mudanças Ltda", Email = "qualidade@cauaecesarmudancasltda.com.br", Telefone = "(12) 2872-7157" },
+                    new Cliente { Codigo = 2, Nome = "Caua e Cesar Mudanças Ltda", Email = "qualidade@cauaecesarmudancasltda.com.br", Telefone = "(12) 2872-7157" },
                     new Cliente { Codigo = 3, Nome = "Bento e Francisco Medicina Geral", Email = "cobranca@bentoefranciscomedicina.com.br", Telefone = "(13) 3756-5745" },
                     new Cliente { Codigo = 4, Nome = "Luciana e Stefany Advocacia ME", Email = "vendas@lucianaestefanyadvocaciame.com.br", Telefone = "(11) 2983-9664" },
                     new Cliente { Codigo = 5, Nome = "Kevin e Agatha Marketing ME", Email = "estoque@kevineagathamarketingme.com.br", Telefone = "(11) 2825-2291"}
