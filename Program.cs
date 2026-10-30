@@ -68,7 +68,29 @@ namespace CatalogoFilmes
                     };
                     context.ProjetoFuncionario.Add(projetoFuncionario);
                     context.SaveChanges();
-                
+
+
+                    projeto = new Projeto()
+                    {
+                      Nome = "Radio Projeto",
+                      Descricao = "Sistema de Gerenciamento de Radios",
+                      Orcamento = 2000m,
+                      DataInicio = new DateTime(2025,11,24),
+                      DataConclusao = DateTime.Now,
+                      Status = StatusProjeto.Concluido,
+                      ClienteCodigo = 4
+                    };
+                    context.Projetos.Add(projeto);
+                    context.SaveChanges();
+
+                    var projetofuncionario = new ProjetoFuncionario()
+                    {
+                      FuncionarioCodigo = 16,
+                      ProjetoCodigo = projeto.Codigo,
+                      HorasTrabalhadas = 220
+                    };
+
+
 
             }
 
